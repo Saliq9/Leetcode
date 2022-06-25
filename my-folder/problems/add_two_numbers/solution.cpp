@@ -12,7 +12,9 @@ public:
             sum += p->val;
             p = p->next;
         }
-        if(q != nullptr){
+        
+        if(q != nullptr)
+        {
             sum += q->val;
             q = q->next;
         }
@@ -21,8 +23,10 @@ public:
 
         if(sum > 9)
         {
-            if(p != nullptr) p->val ++;
-            else if(q != nullptr) q->val ++;
+            if(p != nullptr) 
+                p->val ++;
+            else if(q != nullptr) 
+                q->val ++;
             else
             {
                 res->next = new ListNode(sum/10);
